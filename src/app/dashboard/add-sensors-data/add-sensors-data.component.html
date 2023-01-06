@@ -1,0 +1,72 @@
+<app-button
+  text="{{ showAddTask ? 'Close' : 'Add measurement' }}"
+  (btnClick)="toggleAddTask()">
+</app-button>
+
+
+
+<div class="flex-container">
+  <form
+    [formGroup]="sensorenDataForm"
+    (ngSubmit)="onSubmit()"
+    *ngIf="showAddTask">
+
+    <h2>Add new measurement</h2>
+ 
+    <!--SENSOR ID-->
+    <mat-form-field appearance="outline">
+      <mat-label>Sensor ID</mat-label>
+        <mat-select matNativeControl required formControlName="sensorId" ng-value="sensorId">
+          <mat-option value="" disabled>Please select sensor ID</mat-option>
+            <mat-option *ngFor="let item of storeService.sensoren" [value]="item.id">
+              {{ item?.id }}
+          </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+
+    <!--DATUM-->
+    <mat-form-field appearance="outline" class="example-full-width">
+      <mat-label>DateTime</mat-label>
+      <input matInput  name="datum" formControlName="date" />
+      <mat-hint align="end">YYYY-MM-DD hh:mm:ss</mat-hint>
+    </mat-form-field>
+
+
+    <!--TEMPERATUR-->
+    <mat-form-field appearance="outline" class="example-full-width">
+      <mat-label>Temperature</mat-label>
+        <input
+          matInput
+          type="number"
+          name="Temperatur"
+          formControlName="temperature"
+          min="-99"
+          max="99"
+          ng-value="Temperatur"
+          />
+          <mat-hint align="end">from -99 to +99°C</mat-hint>
+    </mat-form-field>
+
+
+    <!--LUFTFEUCHTIGKEIT-->
+    <mat-form-field appearance="outline" class="example-full-width">
+      <mat-label>Humidity</mat-label>
+        <input
+          matInput
+          type="number"
+          name="Luftfeuchtigkeit"
+          formControlName="humidity"
+          min="0"
+          ng-Value="Luftfeuchtigkeit"
+          max="100"/>
+          <mat-hint align="end">from 0 to 100%</mat-hint>
+      </mat-form-field>
+
+
+      <button mat-raised-button color="primary" type="submit" class="btn" >
+      Create
+      </button>
+
+  </form>
+</div>

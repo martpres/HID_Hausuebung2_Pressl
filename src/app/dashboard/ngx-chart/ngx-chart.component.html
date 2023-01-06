@@ -1,0 +1,44 @@
+
+<div class="flex-container">
+
+    <div *ngIf="!isLoading">
+
+    <h1>Temperature</h1>
+
+    <ngx-charts-line-chart 
+    [view]="[1000,400]"
+        [results]="data"
+        [xAxisLabel]="'TimeDate'"
+        [legendTitle]="'Sensors'"
+        [yAxisLabel]="'Temperature'"
+        [legend]="true"
+        [showXAxisLabel]="true"
+        [showYAxisLabel]="true"
+        [xAxis]="true"
+        [yAxis]="true"
+        [gradient]="true">
+    </ngx-charts-line-chart>
+
+    </div>
+
+
+    <div *ngIf="!isLoading">
+
+        <h1>Humidity</h1>
+        
+        <ngx-charts-line-chart 
+        [view]="[1000,400]"
+            [results]="data2"
+            [xAxisLabel]="'TimeDate'"
+            [legendTitle]="'Sensors'"
+            [yAxisLabel]="'Humidity'"
+            [legend]="true"
+            [showXAxisLabel]="true"
+            [showYAxisLabel]="true"
+            [xAxis]="true"
+            [yAxis]="true"
+            [gradient]="true">
+        </ngx-charts-line-chart>
+        
+        </div>
+</div>

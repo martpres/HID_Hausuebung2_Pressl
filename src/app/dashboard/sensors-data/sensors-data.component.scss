@@ -1,0 +1,29 @@
+table 
+{
+    width: 100%;
+    background-color: chartreuse;
+}
+
+.spinner-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: #fafafa; 
+    box-shadow:0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12)
+}
+
+.dark-overlay{
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    min-height:100%;
+}
+
+.mat-spinner {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+

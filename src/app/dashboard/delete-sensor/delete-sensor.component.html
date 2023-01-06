@@ -1,0 +1,33 @@
+<app-button
+  text="{{ showAddTask ? 'Close' : 'Delete sensor' }}"
+  (btnClick)="toggleAddTask()">
+</app-button>
+
+
+<div class="flex-container">
+  <form
+    [formGroup]="sensorenDelete"
+    (ngSubmit)="onSubmit()"
+    *ngIf="showAddTask">
+
+
+    <h2>Delete sensor</h2>
+ 
+
+    <!--SENSOR ID-->
+    <mat-form-field appearance="outline">
+      <mat-label>Sensor ID</mat-label>
+        <mat-select matNativeControl required formControlName="id" ng-value="sensorId">
+          <mat-option value="" disabled>Please select sensor ID</mat-option>
+            <mat-option *ngFor="let item of storeService.sensoren"  [value]="item.id">
+              {{ item?.id }}
+          </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+
+      <button mat-raised-button color="primary" type="submit" class="btn" >
+        delete
+      </button>
+
+  </form>

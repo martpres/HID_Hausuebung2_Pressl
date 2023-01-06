@@ -1,0 +1,58 @@
+<app-button
+  text="{{ showAddTask ? 'Close' : 'Add sensor' }}"
+  (btnClick)="toggleAddTask()">
+</app-button>
+
+
+<div class="flex-container">
+  <form
+    [formGroup]="sensorenDataForm"
+    (ngSubmit)="onSubmit()"
+    *ngIf="showAddTask">
+
+
+    <h2>Add new sensor</h2>
+ 
+
+    <!--NAME-->
+    <mat-form-field appearance="outline">
+      <mat-label>Name*</mat-label>
+      <input formControlName="name" matInput>
+    </mat-form-field>
+
+
+    <!--LOCATION-->
+    <mat-form-field appearance="outline">
+      <mat-label>Location*</mat-label>
+      <input formControlName="location" matInput>
+    </mat-form-field>
+
+
+    <!--ACTIVE-->
+    <mat-form-field appearance="outline">
+      <mat-label>Active</mat-label>
+      <mat-select formControlName="active">
+        <mat-option value="false">false</mat-option>
+        <mat-option value="true">true</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+
+    <!--POSITION-->
+    <mat-form-field appearance="outline">
+      <mat-label>SensorType</mat-label>
+      <mat-select formControlName="position">
+        <mat-option value="INDOOR">INDOOR</mat-option>
+        <mat-option value="OUTDOOR">OUTDOOR</mat-option>
+        <mat-option value="WATER">WATER</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+
+
+      <button mat-raised-button color="primary" type="submit" class="btn" >
+      create
+      </button>
+
+  </form>
+</div>

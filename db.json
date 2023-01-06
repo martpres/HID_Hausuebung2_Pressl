@@ -1,0 +1,195 @@
+{
+  "sensorsData": [
+    {
+      "sensorId": 2,
+      "temperature": "100",
+      "humidity": 45,
+      "date": "2022-08-10 00:00:00",
+      "id": 27,
+      "sensor": {
+        "id": 2,
+        "name": "Hallo",
+        "location": "abc",
+        "active": "true",
+        "position": "OUTDOOR"
+      }
+    },
+    {
+      "sensorId": 1,
+      "temperature": 33.3,
+      "humidity": 41.4,
+      "date": "2022-08-03 00:00:00",
+      "id": 28
+    },
+    {
+      "sensorId": 1,
+      "temperature": 22,
+      "humidity": 68,
+      "date": "2022-08-03 00:00:00",
+      "id": 29
+    },
+    {
+      "sensorId": 1,
+      "temperature": 1,
+      "humidity": 1.7,
+      "date": "2022-12-14 00:00:00",
+      "id": 30
+    },
+    {
+      "sensorId": 1,
+      "temperature": -3.3,
+      "humidity": 4,
+      "date": "2022-12-29 00:00:00",
+      "id": 32
+    },
+    {
+      "sensorId": 2,
+      "temperature": 99,
+      "humidity": 19.4,
+      "date": "2022-12-28 00:00:00",
+      "id": 33
+    },
+    {
+      "sensorId": 1,
+      "temperature": 44.5,
+      "humidity": 34,
+      "date": "2022-12-22 00:00:00",
+      "id": 34
+    },
+    {
+      "sensorId": 1,
+      "temperature": 2.8,
+      "humidity": 2,
+      "date": "2022-12-01 00:00:00",
+      "id": 35
+    },
+    {
+      "sensorId": 2,
+      "temperature": 39.7,
+      "humidity": 68.1,
+      "date": "2022-12-16 00:00:00",
+      "id": 36
+    },
+    {
+      "sensorId": 2,
+      "temperature": 50.4,
+      "humidity": 22.8,
+      "date": "2022-12-16 00:00:00",
+      "id": 37
+    },
+    {
+      "sensorId": 1,
+      "temperature": 50,
+      "humidity": 36.4,
+      "date": "2022-12-22 00:00:00",
+      "id": 38
+    },
+    {
+      "sensorId": 1,
+      "temperature": 50.9,
+      "humidity": 47.7,
+      "date": "2022-12-22 00:00:00",
+      "id": 39
+    },
+    {
+      "sensorId": 1,
+      "temperature": 50,
+      "humidity": 50.7,
+      "date": "2022-12-22 00:00:00",
+      "id": 40
+    },
+    {
+      "sensorId": 1,
+      "temperature": 39.7,
+      "humidity": 50,
+      "date": "2022-12-22 00:00:00",
+      "id": 41
+    },
+    {
+      "sensorId": 1,
+      "temperature": 44.8,
+      "humidity": 50.1,
+      "date": "2022-12-22 00:00:00",
+      "id": 42
+    },
+    {
+      "sensorId": 1,
+      "temperature": 50,
+      "humidity": 50,
+      "date": "2022-12-02 00:00:00",
+      "id": 43
+    },
+    {
+      "sensorId": 1,
+      "temperature": 88.7,
+      "humidity": 88,
+      "date": "2023-02-01 00:00:00",
+      "id": 44
+    },
+    {
+      "sensorId": 1,
+      "temperature": 1.1,
+      "humidity": 1.9,
+      "date": "2023-03-07 00:00:00",
+      "id": 45
+    },
+    {
+      "sensorId": 4,
+      "temperature": 11,
+      "humidity": 11.8,
+      "date": "2023-03-07 00:00:00",
+      "id": 46
+    },
+    {
+      "sensorId": 4,
+      "temperature": 1,
+      "humidity": 44,
+      "date": "2222-22-22 12:12:12",
+      "id": 47
+    },
+    {
+      "sensorId": 2,
+      "temperature": 50,
+      "humidity": 50,
+      "date": "2023-22-22 12:12:12",
+      "id": 48
+    }
+  ],
+  "sensors": [
+    {
+      "id": 1,
+      "name": "Sensor1",
+      "location": "Schlafzimmer",
+      "active": true,
+      "position": "INDOOR"
+    },
+    {
+      "id": 2,
+      "name": "Hallo",
+      "location": "abc",
+      "active": "true",
+      "position": "OUTDOOR"
+    },
+    {
+      "id": 3,
+      "name": "Sensor3",
+      "location": "Terasse",
+      "active": false,
+      "position": "OUTDOOR"
+    },
+    {
+      "id": 4,
+      "name": "Sensor4",
+      "location": "Pool",
+      "active": true,
+      "position": "WATER"
+    },
+    {
+      "id": 5,
+      "name": "BEZEHDSKJHF",
+      "location": "Vienna",
+      "active": "true",
+      "position": "WATER"
+    }
+  ]
+}
